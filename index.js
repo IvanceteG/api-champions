@@ -14,7 +14,7 @@ app.use('/api/equipos', routerEquipos)
 
 app.get('/', (req, res) =>{
     console.log('Peticion recibida');
-    res.send('Hola mundo!');
+    res.send('Api de remontada ' + process.env.EJEMPLO);
 })
 
 // app.get('/api/equipos', (req, res) => {
